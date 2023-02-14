@@ -1,4 +1,4 @@
-import {paginator} from "./paginator.js";
-document.addEventListener('DOMContentLoaded',()=>{
-    paginator();
+import { paginator } from "./paginator.js";
+document.addEventListener("DOMContentLoaded", () => {
+  paginator();
 });

@@ -82,7 +82,7 @@ export function paginator() {
       container.classList.add("col-md-3", "mb-3");
 
       const card = document.createElement("div");
-      card.classList.add("card","border-dark");
+      card.classList.add("card", "border-dark");
 
       const img = document.createElement("img");
       img.src = previewURL;
@@ -126,6 +126,11 @@ export function paginator() {
     cleanHTML(containerPagination);
     // Mostrar botones de la paginación
     showPaginator();
+  }
+
+  // Calcular páginas del paginador
+  function calculatePages(totalPages) {
+    return parseInt(Math.ceil(totalPages / elementsPerPage));
   }
 
   // Creamos un generador para la paginación
@@ -175,16 +180,9 @@ export function paginator() {
     }
   }
 
-  // Calcular páginas del paginador
-  function calculatePages(totalPages) {
-    return parseInt(Math.ceil(totalPages / elementsPerPage));
-  }
-
   // Limpiar HTML previo
   function cleanHTML(element) {
-    /* Removing the previous HTML. */
     while (element.firstChild) {
-      /* Removing the first child of the containerResult element. */
       element.removeChild(element.firstChild);
     }
   }
