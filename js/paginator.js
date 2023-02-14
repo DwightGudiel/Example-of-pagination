@@ -41,7 +41,7 @@ export function paginator() {
     //Input del form
     const search = document.querySelector("#search").value.trim();
 
-    const key = "33547235-e850aa8b8fb37939be85bd6b7";
+    const key = "";
     const url = `https://pixabay.com/api/?key=${key}&q=${search}&image_type=photo&per_page=${elementsPerPage}&page=${currentPage}`;
 
     fetch(url)
