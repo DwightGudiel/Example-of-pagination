@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ejemplo de una paginación en javaScript vanilla"
+    />
+    <meta name="keywords" content="paginación,javaScript,CSS3,HTML5" />
+    <meta name="author" content="Dwight Gudiel" />
+    <meta name="copyright" content="Dwight Gudiel" />
+    <title>Example - Pagination</title>
+    <!-- app -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- toastify-js -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="bg-dark text-center text-white py-2 mb-5">
+      Ejemplo de una paginación
+    </h1>
+
+    <main class="container-lg">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="" id="form">
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-white"
+                ><i class="bi bi-search"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                id="search"
+                aria-label="input de búsqueda"
+                placeholder="Ejemplo: comida, café, gatos, perros etc."
+                aria-describedby="input de búsqueda"
+              />
+            </div>
+
+            <button class="btn btn-primary w-100" type="submit">
+              <i class="bi bi-search"></i> Buscar Imagen
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div id="result" class="row mt-5"></div>
+      <div
+        id="pagination"
+        class="d-flex flex-wrap justify-content-center"
+      ></div>
+    </main>
+
+    <footer class="footer bg-dark">
+      <p class="text-center text-white fw-bold fs-5 p-3 text-uppercase">
+        Creado por<span
+          ><a
+            class="text-decoration-none"
+            href="https://github.com/DwightGudiel"
+            target="_blank"
+          >
+            Dwight Gudiel <i class="bi bi-github"></i> </a
+        ></span>
+        <span id="copyright-year"></span>
+      </p>
+    </footer>
+
+    <!-- app -->
+    <script src="./js/app.js" type="module"></script>
+    <!-- bootstrap -->
+    <script src="./css/bootstrap.min.css"></script>
+    <!-- toastify-js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
